@@ -24,4 +24,4 @@ The number of eaten proteins, fats, carbohydrates and calories per day is displa
 <p align="center"><img src="./img/add_window.jpg" alt="example" width="20%"></p>
 
 ## Database
-<p align="center"><img src="./img/DBCalorieApp.jpg" alt="example" width="50%"></p>
+<p align="center"><img src="./img/DB_CalorieApp.jpg" alt="example" width="50%"></p>
