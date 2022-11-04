@@ -11,9 +11,9 @@ In this version, the program checks for the presence of the entered name in the 
 If there is no name, adds it. If the name is already in the database, a welcome window appears.
 
 <p align="center"><img src="./img/start_window.jpg" alt="example" width="20%">
-<img src="./img/greeting_window.jpg" alt="example" width="20%"></p>
+<img src="./img/greeting_window.jpg" alt="example" width="20%"  align="top"></p>
 
-After that, the user gets to the calendar page, where he can choose the date of the meal.
+After that, the user gets to the calendar page, where he can choose the date of the meal.  
 
 <p align="center"><img src="./img/calendar_window.jpg" alt="example" width="20%"></p>
 
@@ -22,8 +22,8 @@ After clicking on the "Add product"("Добавить продукт") button, a
 After adding the product, the additional window will disappear and to display the entry in the diary, you need to click the "Update"("Обновить") button.
 The number of eaten proteins, fats, carbohydrates and calories per day is displayed on top
 
-<p align="center"><img src="./img/diary_window.jpg" alt="example" width="20%"></p>
-<p align="center"><img src="./img/add_window.jpg" alt="example" width="20%"></p>
+<p align="center"><img src="./img/diary_window.jpg" alt="example" width="20%">  
+<img src="./img/add_window.jpg" alt="example" width="30%" align="top"></p>
 
 ## Database
 <p align="center"><img src="./img/DB_CalorieApp.jpg" alt="example" width="50%"></p>
