@@ -6,10 +6,12 @@ carbohydrates and calories is displayed for the selected day.
 ## Functional
 Authorization is located on the start screen.
 
-In this version, the program checks for the presence of the entered name in the database. 
-If there is no name, adds it.
+In this version, the program checks for the presence of the entered name in the database.
 
-<p align="center"><img src="./img/start_window.jpg" alt="example" width="20%"></p>
+If there is no name, adds it. If the name is already in the database, a welcome window appears.
+
+<p align="center"><img src="./img/start_window.jpg" alt="example" width="20%">
+<img src="./img/greeting_window.jpg" alt="example" width="20%"></p>
 
 After that, the user gets to the calendar page, where he can choose the date of the meal.
 
