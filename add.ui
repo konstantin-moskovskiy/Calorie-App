@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>430</width>
-    <height>292</height>
+    <height>327</height>
    </rect>
   </property>
   <property name="maximumSize">
@@ -324,9 +324,9 @@ background-color: rgb(96, 76, 127);</string>
             <colorrole role="Button">
              <brush brushstyle="SolidPattern">
               <color alpha="255">
-               <red>0</red>
+               <red>85</red>
                <green>85</green>
-               <blue>0</blue>
+               <blue>127</blue>
               </color>
              </brush>
             </colorrole>
@@ -396,18 +396,18 @@ background-color: rgb(96, 76, 127);</string>
             <colorrole role="Base">
              <brush brushstyle="SolidPattern">
               <color alpha="255">
-               <red>0</red>
-               <green>0</green>
-               <blue>0</blue>
+               <red>85</red>
+               <green>85</green>
+               <blue>127</blue>
               </color>
              </brush>
             </colorrole>
             <colorrole role="Window">
              <brush brushstyle="SolidPattern">
               <color alpha="255">
-               <red>0</red>
+               <red>85</red>
                <green>85</green>
-               <blue>0</blue>
+               <blue>127</blue>
               </color>
              </brush>
             </colorrole>
@@ -461,9 +461,9 @@ background-color: rgb(96, 76, 127);</string>
             <colorrole role="Button">
              <brush brushstyle="SolidPattern">
               <color alpha="255">
-               <red>0</red>
+               <red>85</red>
                <green>85</green>
-               <blue>0</blue>
+               <blue>127</blue>
               </color>
              </brush>
             </colorrole>
@@ -533,18 +533,18 @@ background-color: rgb(96, 76, 127);</string>
             <colorrole role="Base">
              <brush brushstyle="SolidPattern">
               <color alpha="255">
-               <red>0</red>
-               <green>0</green>
-               <blue>0</blue>
+               <red>85</red>
+               <green>85</green>
+               <blue>127</blue>
               </color>
              </brush>
             </colorrole>
             <colorrole role="Window">
              <brush brushstyle="SolidPattern">
               <color alpha="255">
-               <red>0</red>
+               <red>85</red>
                <green>85</green>
-               <blue>0</blue>
+               <blue>127</blue>
               </color>
              </brush>
             </colorrole>
@@ -598,9 +598,9 @@ background-color: rgb(96, 76, 127);</string>
             <colorrole role="Button">
              <brush brushstyle="SolidPattern">
               <color alpha="255">
-               <red>0</red>
+               <red>85</red>
                <green>85</green>
-               <blue>0</blue>
+               <blue>127</blue>
               </color>
              </brush>
             </colorrole>
@@ -670,18 +670,18 @@ background-color: rgb(96, 76, 127);</string>
             <colorrole role="Base">
              <brush brushstyle="SolidPattern">
               <color alpha="255">
-               <red>0</red>
+               <red>85</red>
                <green>85</green>
-               <blue>0</blue>
+               <blue>127</blue>
               </color>
              </brush>
             </colorrole>
             <colorrole role="Window">
              <brush brushstyle="SolidPattern">
               <color alpha="255">
-               <red>0</red>
+               <red>85</red>
                <green>85</green>
-               <blue>0</blue>
+               <blue>127</blue>
               </color>
              </brush>
             </colorrole>
@@ -730,18 +730,12 @@ background-color: rgb(96, 76, 127);</string>
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="product_lineEdit">
-         <property name="maximumSize">
-          <size>
-           <width>175</width>
-           <height>55</height>
-          </size>
+        <widget class="QComboBox" name="chooseBox">
+         <property name="currentText">
+          <string/>
          </property>
-         <property name="styleSheet">
-          <string notr="true">color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="text">
-          <string>продукт</string>
+         <property name="minimumContentsLength">
+          <number>1</number>
          </property>
         </widget>
        </item>
@@ -757,7 +751,10 @@ background-color: rgb(96, 76, 127);</string>
           <string notr="true">color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
-          <string>масса</string>
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string>Введите массу:</string>
          </property>
         </widget>
        </item>

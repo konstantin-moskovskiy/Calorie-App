@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>367</width>
-    <height>582</height>
+    <width>429</width>
+    <height>629</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -32,6 +32,9 @@
         </property>
         <property name="text">
          <string>Привет!</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
         </property>
        </widget>
       </item>
@@ -64,7 +67,10 @@
 background-color: rgb(96, 76, 127);</string>
         </property>
         <property name="text">
-         <string>имя:3</string>
+         <string/>
+        </property>
+        <property name="placeholderText">
+         <string>Введите имя:</string>
         </property>
        </widget>
       </item>

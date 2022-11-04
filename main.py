@@ -1,12 +1,9 @@
-'ВОТ ЭТО КОНЕЧНАЯ ВЕРСИЯ'
-
-
 import sys
 from PyQt5 import uic  # Импортируем uic
 from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QTableWidgetItem
 import sqlite3 as sql
 
-main_bd = sql.connect('C:\\Users\\mskou\\Documents\\ProjectDB.db') # ПОМЕНЯТЬ АДРЕС
+main_bd = sql.connect('ProjectDB.db')
 cursor = main_bd.cursor()
 name = ''
 date = ''
@@ -25,14 +22,30 @@ class MyWidget(QMainWindow):
             if not str(name).isalpha():
                 raise ValueError
             self.calendar.show()
+            #self.greeting()
             self.close()
             cursor.execute(f'SELECT "имя" from [таблица имен] WHERE "имя" = "{name}";')
             name_list = cursor.fetchall()
             if len(name_list) == 0:
                 cursor.execute(f'INSERT INTO [таблица имен] ("имя") VALUES ("{name}");')
                 main_bd.commit()
+            else:
+                self.greeting()
         except ValueError:
             print('ошибка при вводе')
+
+
+    def greeting(self):
+        self.greet = Greeting()
+
+
+class Greeting(QWidget):
+    def __init__(self):
+        super().__init__()
+        uic.loadUi('greeting.ui', self)
+        self.show()
+        self.label.setText(f'Привет, {name}!')
+        self.continueButton.clicked.connect(self.close)
 
 
 class Calendar(QWidget):
@@ -150,10 +163,14 @@ class Add_product(QWidget):
     def __init__(self):
         super().__init__()
         uic.loadUi('add.ui', self)
+        cursor.execute(f'SELECT "имя продукта" from [таблица продуктов];')
+        list_of_data = cursor.fetchall()
+        for i in list_of_data:
+            self.chooseBox.addItem(i[0])
         self.okey_btn.clicked.connect(self.add_product)
 
     def add_product(self):
-        product = self.product_lineEdit.text()
+        product = self.chooseBox.currentText() #!
         weight = self.weight_lineEdit.text()
         eat_time = ''
         if self.radio_br.isChecked():
