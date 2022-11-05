@@ -180,7 +180,7 @@ class Add_product(QWidget):
         elif self.radio_d.isChecked():
             eat_time = 'ужин'
         try:
-            if not str(product).isalpha() or (eat_time == ''):
+            if not str(product).replace(' ','').isalpha() or (eat_time == ''):
                 raise ValueError
             weight = float(weight)
 
